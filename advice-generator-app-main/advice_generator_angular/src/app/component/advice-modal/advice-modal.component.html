@@ -1,0 +1,19 @@
+<div class="container">
+  <mat-card class="advice-card">
+    <mat-card-content class="advice-message">
+      <p class="advice-number">ADVICE # {{advice_id}}</p>
+      <p>
+        “{{advice_message}} ”
+      </p>
+      <div class="pause">
+        <img class="mobile-image" src="../assets/images/pattern-divider-mobile.svg" alt="">
+        <img class="desktop-image" src="../assets/images/pattern-divider-desktop.svg" width="80%" alt="">
+      </div>
+
+    </mat-card-content>
+    <div class="advice-button" (click)="gettingAdvice()">
+      <img src="../assets/images/icon-dice.svg" alt="">
+    </div>
+
+  </mat-card>
+</div>

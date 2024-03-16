@@ -1,0 +1,92 @@
+.container {
+  margin: 30% auto;
+  padding: 0 20px;
+  font-size: 28px;
+  font-family: "Manrope", sans-serif;
+  width: 15rem;
+}
+
+/* - Light Cyan: hsl(193, 38%, 86%)
+- Neon Green: hsl(150, 100%, 66%) */
+.desktop-image {
+  display: none;
+}
+
+.mobile-image {
+  width: 12rem;
+}
+
+.advice-message {
+  /* padding: 10px; */
+  margin: 15px;
+}
+.advice-card {
+  position: relative;
+  padding: 15px 0;
+  font-weight: 700;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  color: hsl(193, 38%, 86%);
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.advice-number {
+  padding: 0 0 10px 0;
+  font-size: 9px;
+  line-height: 1px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: hsl(150, 100%, 66%);
+}
+
+.advice-button {
+  position: absolute;
+  bottom: -20px;
+
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: hsl(150, 100%, 66%);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 10px;
+}
+.advice-button > img {
+  width: 16px;
+  height: 16px;
+}
+
+.advice-button:hover {
+  cursor: pointer;
+  background-color: hsl(150, 100%, 66%);
+  box-shadow: 0 0 10px hsl(150, 100%, 66%), 0 0 20px hsl(150, 100%, 66%);
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    margin: 15% auto;
+    width: 21rem;
+  }
+  .advice-card {
+    font-size: 1.1rem;
+  }
+  .mobile-image {
+    display: none;
+  }
+  .desktop-image {
+    padding: 10px 0;
+    display: block;
+    width: 18rem;
+  }
+
+  .advice-number {
+    font-size: 11px;
+    line-height: 1px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: hsl(150, 100%, 66%);
+  }
+}
