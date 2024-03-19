@@ -1,9 +1,13 @@
 .container {
-  margin: 30% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   padding: 0 20px;
   font-size: 28px;
   font-family: "Manrope", sans-serif;
   width: 15rem;
+  height: 90vh;
 }
 
 /* - Light Cyan: hsl(193, 38%, 86%)
@@ -67,11 +71,11 @@
 
 @media screen and (min-width: 600px) {
   .container {
-    margin: 15% auto;
-    width: 21rem;
+    margin: 0 auto;
+    width: 30rem;
   }
   .advice-card {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .mobile-image {
     display: none;
@@ -79,7 +83,7 @@
   .desktop-image {
     padding: 10px 0;
     display: block;
-    width: 18rem;
+    width: 27rem;
   }
 
   .advice-number {
